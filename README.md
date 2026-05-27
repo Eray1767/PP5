@@ -123,7 +123,6 @@ warning: remote HEAD refers to nonexistent ref, unable to checkout
 **Your Commands & Output**
 
 ```bash
-# Paste here the remote‐adding & push outputs
 $ git remote add origin-ssh eray_cetinkaya@vorlesung:~/repos/myproject.git
 
 $ git push origin-ssh main
@@ -134,6 +133,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To vorlesung:~/repos/myproject.git
 
 [new branch]      main -> main
+
 ---
 
 ```
