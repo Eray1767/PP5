@@ -124,7 +124,6 @@ warning: remote HEAD refers to nonexistent ref, unable to checkout
 
 ```bash
 # Paste here the remote‐adding & push outputs
-```
 $ git remote add origin-ssh eray_cetinkaya@vorlesung:~/repos/myproject.git
 
 $ git push origin-ssh main
@@ -136,6 +135,8 @@ To vorlesung:~/repos/myproject.git
 
 [new branch]      main -> main
 ---
+
+```
 
 ### Task 4: Fork, Modify, and Pull/Merge Request
 
