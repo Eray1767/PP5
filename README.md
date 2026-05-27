@@ -43,8 +43,27 @@ In this exercise you will:
 **Your Commands & Output**
 
 ```bash
-# Paste here the sequence of git commands you ran
-# and the relevant terminal output (e.g., branch listing, merge messages)
+$ mkdir pp5-aufgabe1
+$ cd pp5-aufgabe1
+$ git init
+Initialized empty Git repository in /home/eray_cetinkaya/pp5-aufgabe1/.git/
+
+$ git checkout -b feature-1
+Switched to a new branch 'feature-1'
+
+$ echo "Dies ist Feature 1" > feature.txt
+$ git add feature.txt
+
+$ git commit -m "Add feature.txt"
+[feature-1 (root-commit) 9ca428a] Add feature.txt
+1 file changed, 1 insertion(+)
+create mode 100644 feature.txt
+
+$ git checkout -b main
+Switched to a new branch 'main'
+
+$ git merge feature-1
+Already up to date.
 ```
 
 ---
@@ -69,7 +88,22 @@ In this exercise you will:
 ```bash
 # Paste here the push & clone commands and outputs
 ```
+$ git push origin-ssh main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To vorlesung:~/repos/myproject.git
 
+[new branch]      main -> main
+
+$ git clone vorlesung:~/repos/myproject.git myproject-clone
+Cloning into 'myproject-clone'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+warning: remote HEAD refers to nonexistent ref, unable to checkout
 ---
 
 ### Task 3: GitHub & THGA GitLab
@@ -91,7 +125,16 @@ In this exercise you will:
 ```bash
 # Paste here the remote‐adding & push outputs
 ```
+$ git remote add origin-ssh eray_cetinkaya@vorlesung:~/repos/myproject.git
 
+$ git push origin-ssh main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To vorlesung:~/repos/myproject.git
+
+[new branch]      main -> main
 ---
 
 ### Task 4: Fork, Modify, and Pull/Merge Request
