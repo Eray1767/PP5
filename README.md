@@ -86,8 +86,6 @@ Already up to date.
 **Your Commands & Output**
 
 ```bash
-# Paste here the push & clone commands and outputs
-```
 $ git push origin-ssh main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -104,6 +102,7 @@ remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (3/3), done.
 warning: remote HEAD refers to nonexistent ref, unable to checkout
+```
 ---
 
 ### Task 3: GitHub & THGA GitLab
